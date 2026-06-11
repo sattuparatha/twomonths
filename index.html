@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Months Wrapped</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Spotify Wrapped Ribbons / Wavy Background -->
+    <div class="ribbon-container">
+        <div class="ribbon r1"></div>
+        <div class="ribbon r2"></div>
+        <div class="ribbon r3"></div>
+    </div>
+
+    <!-- LOCK SCREEN -->
+    <div id="lock-screen" class="screen active">
+        <div class="lock-container">
+            <h1 class="lock-title">Private Wrapped</h1>
+            <p class="lock-subtitle">Enter password to unlock your 2-month review.</p>
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Password...">
+                <button id="unlock-btn">→</button>
+            </div>
+            <p id="error-msg" class="error-msg"></p>
+            <p class="hint">Hint: "I love ___" (Think about your favorite grain!)</p>
+        </div>
+    </div>
+
+    <!-- WRAPPED EXPERIENCE -->
+    <div id="wrapped-container" class="screen">
+        
+        <!-- Progress Bars -->
+        <div class="progress-container">
+            <div class="progress-bar"><div class="progress-fill" id="fill-0"></div></div>
+            <div class="progress-bar"><div class="progress-fill" id="fill-1"></div></div>
+            <div class="progress-bar"><div class="progress-fill" id="fill-2"></div></div>
+            <div class="progress-bar"><div class="progress-fill" id="fill-3"></div></div>
+            <div class="progress-bar"><div class="progress-fill" id="fill-4"></div></div>
+        </div>
+
+        <!-- Navigation Click Areas -->
+        <div class="nav-area left" id="nav-left"></div>
+        <div class="nav-area right" id="nav-right"></div>
+
+        <!-- Slides -->
+        <div class="slides-wrapper">
+            
+            <!-- Slide 0: Intro -->
+            <div class="slide slide-0 active" data-bg="gradient-1">
+                <h2 class="slide-title slide-up">2 Months In.</h2>
+                <h1 class="slide-huge slide-up delay-1">The speedrun to my heart.</h1>
+                <p class="slide-text slide-up delay-2">Are you ready for your Wrapped?</p>
+            </div>
+
+            <!-- Slide 1: Top Artist -->
+            <div class="slide slide-1" data-bg="gradient-2">
+                <p class="slide-subtitle fade-in">Your top artist this month was...</p>
+                <div class="artist-circle pop-in delay-1">
+                    <img src="images/WhatsApp Image 2026-04-22 at 03.07.13.jpeg" alt="Us">
+                </div>
+                <h1 class="slide-huge fade-in delay-2">Aadya.</h1>
+                <p class="slide-text fade-in delay-3">(My favourite Tomato 🍅)</p>
+            </div>
+
+            <!-- Slide 2: Stats -->
+            <div class="slide slide-2" data-bg="gradient-3">
+                <h2 class="slide-title slide-up">Let's look at the numbers.</h2>
+                
+                <div class="stat-card slide-up delay-1">
+                    <h3>1 Month</h3>
+                    <p>Feels longer than the entire years I have lived before, because of how intensely I have felt every second with you.</p>
+                </div>
+                
+                <div class="stat-card slide-up delay-2">
+                    <h3>∞</h3>
+                    <p>Quiet cuddles where the world suddenly stopped mattering.</p>
+                </div>
+                
+                <div class="stat-card slide-up delay-3">
+                    <h3>Top Memories</h3>
+                    <p>Your jasmine smell, sleepy conversations, and every stolen moment.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Personality -->
+            <div class="slide slide-3" data-bg="gradient-4">
+                <div class="artist-circle pop-in delay-1" style="width: 150px; height: 150px; margin-top: 0;">
+                    <img src="images/WhatsApp Image 2026-04-26 at 23.17.46.jpeg" alt="Us">
+                </div>
+                <p class="slide-subtitle slide-up delay-1">Your aura is...</p>
+                <h1 class="slide-huge slide-up delay-2" style="color: #ff007f; margin: 10px 0;">Pisces INTP</h1>
+                <p class="slide-text slide-up delay-3">No one has ever made me feel so seen while saying so little. You swim in dreams and analyze them when you wake up.</p>
+                <p class="slide-text slide-up delay-3" style="margin-top: 10px;">(Somewhere between coincidence and destiny, you became my favourite thing).</p>
+            </div>
+
+            <!-- Slide 4: Outro -->
+            <div class="slide slide-4" data-bg="gradient-5">
+                <div class="polaroid fade-in">
+                    <img src="images/WhatsApp Image 2026-05-14 at 15.00.20.jpeg" alt="Us">
+                    <div class="caption">Happy 2 Months!</div>
+                </div>
+                <h2 class="slide-title fade-in delay-1" style="margin-top: 20px;">I love you.</h2>
+                <p class="slide-text fade-in delay-2">Now even the gentlest hours belong to you somehow. I love you with my deepest heart. ❤️</p>
+                <button id="replay-btn" class="fade-in delay-3">Replay Wrapped</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
